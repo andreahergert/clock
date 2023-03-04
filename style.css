@@ -43,4 +43,11 @@ html {
     background: black;
     position: absolute;
     top: 50%;
+    /* pivots form middle for transform-origin */
+    transform-origin: 100%; 
+    /* gets this to spin like a clock in rotation */
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    /* click backs on clock face like a tic toc */
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
   }
